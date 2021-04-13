@@ -1,5 +1,7 @@
 package com.javasber.lesson1;
 
+import com.javasber.lesson1.Person;
+
 public class AppPersonMarryDivorce {
     public static void main(String[] args) {
         Person artem = new Person(true, "artem");

@@ -1,8 +1,5 @@
 package com.javasber.lesson2;
 
-import com.javasber.lesson2.Car;
-
-import java.sql.SQLOutput;
 import java.util.*;
 
 public class CarMain {
