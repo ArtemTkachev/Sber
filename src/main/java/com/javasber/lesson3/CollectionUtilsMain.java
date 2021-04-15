@@ -24,8 +24,9 @@ public class CollectionUtilsMain {
         int index = CollectionUtils.indexOf(animals2, whiteRhino);
         System.out.println("\nindex: " + index);
 
-//        List<Animal> animals4 = CollectionUtils.limit(animals2, 3);
-//        animals4.forEach(System.out::println);
+        System.out.println();
+        List<Animal> animals4 = CollectionUtils.limit(animals2, 3);
+        animals4.forEach(System.out::println);
 
 
         System.out.println("\n" + CollectionUtils.containsAll(animals2, animals1));

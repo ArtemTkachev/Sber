@@ -34,8 +34,8 @@ public class CollectionUtils {
         return source.indexOf(t);
     }
 
-    public static <T> List<? extends T> limit(List<? extends T> source, int size) {
-        return source.subList(0, size);
+    public static <T> List<T> limit(List<? extends T> source, int size) {
+        return new ArrayList<>(source.subList(0, size));
     }
 
     public static <T> void add(List<? super T> source, T t) {
@@ -63,8 +63,11 @@ public class CollectionUtils {
         return false;
     }
 
-    public static <T> List<T> range(List<T> list, T min, T max, Comparator<T> comparator) {
-        return new ArrayList<>();
-    }
+    public static <T> List<T> range(List<? extends T> list, T min, T max, Comparator<T> comparator) {
+        List<T> restList = new ArrayList<>();
+        list.forEach(v -> {
 
+        });
+        return restList;
+    }
 }
